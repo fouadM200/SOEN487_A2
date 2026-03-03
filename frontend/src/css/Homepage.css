@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
+
+/* whole page */
+.homepage {
+    min-height: 100vh;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+}
+
+/* white card in the middle (global card style) */
+.homepage-card {
+    background: #ffffff;
+    border: 3px solid #2e7d32;
+    border-radius: 16px;
+    padding: 40px 50px;
+    text-align: center;
+    width: 100%;
+}
+
+/* title */
+.homepage-title {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #000;
+}
+
+/* buttons container */
+.homepage-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* primary green button */
+.homepage-btn {
+    background: #2e7d32;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px 26px;
+    width: 360px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.homepage-btn:hover {
+    opacity: 0.9;
+}
+
+.homepage-btn:active {
+    transform: scale(0.98);
+}
+
+/* outlined button (grey fill + green border) */
+.homepage-btn-outline {
+    background: #f2f2f2;
+    border: 3px solid #2e7d32;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px 26px;
+    width: 360px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.homepage-btn-outline:hover {
+    background: #d6d6d6;
+    border: 3px solid #2e7d32;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 14px 26px;
+    width: 360px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.homepage-btn-outline:active {
+    transform: scale(0.98);
+}
+
+/* "Choose a photo" label button */
+.choose-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 2px solid #2e7d32;
+    background: #f2f2f2;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.choose-btn:hover {
+    background: #d6d6d6;
+}
+
+.file-name {
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* preview section */
+.preview {
+    margin-top: 20px;
+}
+
+.preview-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.preview-img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid #2e7d32;
+}
+
+/* delete button */
+.delete-btn {
+    background: #ff0000;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 8px 26px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+}
+
+.delete-btn:hover {
+    opacity: 0.9;
+}
+
+.delete-btn:active {
+    transform: scale(0.98);
+}
+
+/* ===========================
+   DisplayPhotos Page Styling
+   =========================== */
+
+.display-card {
+    width: min(2500px, 100vw);
+}
+
+/* No photos message */
+.empty-text {
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Grid */
+.photos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+/* Each photo card */
+.photo-item {
+    border: 2px solid #2e7d32;
+    border-radius: 14px;
+    padding: 12px;
+    background: #fff;
+    min-width: 0;
+}
+
+/* Image */
+.photo-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+/* Filename + date section */
+.photo-details {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.photo-filename {
+    font-weight: 800;
+    font-size: 16px;
+    word-break: break-word;
+}
+
+.photo-date {
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.photo-date-label {
+    font-weight: 700;
+}
+
+/* Success / Error message */
+.msg {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.msg-success {
+    color: green;
+}
+
+.msg-error {
+    color: red;
+}
+
+/* Return button row */
+.return-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
