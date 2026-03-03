@@ -21,9 +21,8 @@ cd ../backend
 npm install
 ```
 ## How to run the application
-- Start the backend server:
+- In your current terminal, start the backend server:
 ```
-cd ../backend
 node server.ts
 ```
 The server will connect automatically to the MongoDB Atlas database, since it's already configured.
@@ -48,16 +47,16 @@ Click on the link, the application will open in your browser.
 ## Screenshots of working application
 
 1) Homepage:
-![img.png](img.png)
+![img.png](Screenshots/img.png)
 
 2) Upload a new image (success case):
-![img_1.png](img_1.png)
+![img_1.png](Screenshots/img_1.png)
 
 3) Upload a new image (failure case):
-![img_2.png](img_2.png)
+![img_2.png](Screenshots/img_2.png)
 
 4) Display photos:
-![img_7.png](img_7.png)
+![img_7.png](Screenshots/img_7.png)
 
 5) Delete an image "sample-boat-400x300.png" (success case):
-![img_8.png](img_8.png)
+![img_8.png](Screenshots/img_8.png)
